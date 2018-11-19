@@ -1,0 +1,5 @@
+#borderimg1 {
+  border: 30px solid transparent;
+  padding: 15px;
+  border-image: url("https://mdn.mozillademos.org/files/6017/border-image-6.svg") 30 round;
+}

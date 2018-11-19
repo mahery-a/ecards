@@ -1,0 +1,12 @@
+<!--
+<ngp-lightbox></ngp-lightbox>
+<ngp-gallery>
+  <ngp-gallery-item [image]="image1"></ngp-gallery-item>
+  <ngp-gallery-item [image]="image2"></ngp-gallery-item>
+</ngp-gallery>
+-->
+<ngp-lightbox></ngp-lightbox>
+<ngp-gallery>
+  <ngp-gallery-item *ngFor="let item of images | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage }; let i = index" [image]="getImage(i)" routerLink="/ecard-editor" (click)="onThumbnailClick(i)"></ngp-gallery-item>
+</ngp-gallery>
+<pagination-controls (pageChange)="currentPage = $event"></pagination-controls>

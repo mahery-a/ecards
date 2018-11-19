@@ -1,0 +1,27 @@
+<div align="center">
+  <img id="borderimg1" [src]="imagePath">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group row">
+      <div class="col-12 ">
+        <input class="form-control form-control-lg" type="text" required=" " placeholder="Title" [(ngModel)]="title" name="titleEditbox">
+      </div>
+    </div>
+  </form>
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <quill-editor [style]="{height: '200px'}" [(ngModel)]="textbody"></quill-editor>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group row">
+      <div class="col-12 ">
+        <input class="form-control form-control-lg" type="email" required=" " placeholder="Email destination" [(ngModel)]="emailField" name="emailDestination"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+      </div>
+    </div>
+  </form>
+  <button type="submit" class="btn btn-lg btn-rounded btn-primary" (click)="onSubmit()">Send</button>
+</div>
