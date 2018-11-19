@@ -2,7 +2,7 @@
 
 Greeting ecards web application: Angular(front-end) + Spring(Rest API) + MySQL 
 
-## Front-end (Angular 6)
+## Front-end (Angular 6 + Bootstrap 4)
 
 In the application.properties, you have to modify the following:
 * properties related to JavaMail
@@ -17,7 +17,7 @@ In the application.properties, you have to modify the following:
 _Keywords: Typescript/Javascript, Single page application, html5, Css3, Responsive design(Flexbox), 
 Component architecture, functional/reactive programming (rxjs), routing/navigation, testing(Jasmine), security(authentification(Oauth2)/authorization), validation, exception handling, caching, internationalization, Visual studio code_
 
-## Back-end (REST Api Spring 5 + MySQL)
+## Back-end (REST Api Spring 5 + Hibernate + MySQL)
 
 You'll need to install the following dependencies:
 
